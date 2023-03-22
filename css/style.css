@@ -1,4 +1,14 @@
 /**/
+:root {
+    --bg: rgba(0, 0, 255, 0.4);
+    --bg2: #2f2841;
+    --bg3: #2f2841d2;
+    --bg4: #017aff;
+    --base: #fff;
+    --text-color: #f0f0f5;
+    --text-color2: #f0ffffde;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -25,7 +35,42 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 255, 0.4);
+    background-color: var(--bg);
+}
+
+form{
+    width: 400px;
+    height: 500px;
+    display: inherit;
+    flex-direction: column;
+    background-color: var(--bg3);
+    padding: 30px 25px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 35px #000;
+    border: 2px solid var(--base);
+}
+
+form h2 {
+    font-size: 2.3rem;
+    margin: 10px auto;
+    color: var(--base);
+    border: 2px solid var(--base);
+}
+
+form div {
+    width: 100%;
+    display: inherit;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 15px 0;
+    border: 1px solid red;
+}
+
+form div label{
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-bottom: 8px;
 }
 
 

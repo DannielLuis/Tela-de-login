@@ -5,6 +5,7 @@
     --bg3: #2f2841d2;
     --bg4: #017aff;
     --bg5: #025974;
+    --bg6: #2f284183;
     --base: #fff;
     --text-color: #f0f0f5;
     --text-color2: #f0ffffde;
@@ -44,7 +45,9 @@ form{
     width: 400px;
     display: inherit;
     flex-direction: column;
-    background-color: var(--bg3);
+    /*background-color: var(--bg3);*/
+    background-color: var(--bg6);
+    /*border: 1px solid #2f2841;*/
     padding: 30px 25px;
     border-radius: 10px;
     box-shadow: 10px 10px 35px #000;

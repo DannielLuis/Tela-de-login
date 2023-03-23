@@ -55,11 +55,11 @@ form{
 
 form h2 {
     font-size: 2.2rem;
-    margin: 10px auto;
+    margin: 0px auto;
     color: var(--base);
 }
 
-form div {
+.usuario, .senha {
     width: 100%;
     display: inherit;
     flex-direction: column;
@@ -68,13 +68,13 @@ form div {
     margin: 15px 0;
 }
 
-form div label{
+.usuario label, .senha label{
     font-size: 1.5rem;
     color: var(--text-color);
     margin-bottom: 8px;
 }
 
-form div input {
+.usuario #usuario, .senha #senha{
     width: 100%;
     border: none;
     padding: 10px;
@@ -83,7 +83,7 @@ form div input {
     outline: none;
 }
 
-form div input:focus{
+#usuario:focus, #senha:focus{
     box-shadow: 0px 0px 10px 2px #017cff4d;
     outline: 2px solid #017cff83;
 }

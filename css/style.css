@@ -97,6 +97,18 @@ form h2 {
     outline: 2px solid #017cff83;
 }
 
+.group .ver{
+    position: absolute;
+    right: 10px;
+    border: 2px solid red;
+}
+
+.ver .bi{
+    font-size: 1.6rem;
+    color: rgb(0, 0, 0);
+}
+
+
 /* ---------- div checkbox ---------- */
 .checkbox {
     width: 100%;

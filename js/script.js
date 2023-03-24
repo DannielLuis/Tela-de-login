@@ -8,14 +8,21 @@ const btn = document.querySelector(".btn");
     console.log(btn);
 }*/
 
+function limparCampos(){
+    document.getElementById('usuario').value=''
+    document.getElementById('senha').value=''
+}
+
 function logar(){
     var login = document.getElementById('usuario').value;
     var senha = document.getElementById('senha').value;
 
     if(login == usuario && senha == acesso){
         alert('Login realizado com sucesso');
+        limparCampos();
     }else{
         alert('Usuario ou senha incorreto');
+        limparCampos();
     }
 }
 /*

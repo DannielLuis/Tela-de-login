@@ -66,12 +66,21 @@ form h2 {
     align-items: flex-start;
     justify-content: center;
     margin: 15px 0;
+    border: 2px solid #fff;
 }
 
 .usuario label, .senha label{
     font-size: 1.5rem;
     color: var(--text-color);
     margin-bottom: 8px;
+}
+
+.group{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    /*justify-content: center;*/
 }
 
 .usuario #usuario, .senha #senha{
@@ -86,6 +95,39 @@ form h2 {
 #usuario:focus, #senha:focus{
     box-shadow: 0px 0px 10px 2px #017cff4d;
     outline: 2px solid #017cff83;
+}
+
+.group .ver{
+    position: absolute;
+    right: 10px;
+    border: 2px solid red;
+}
+
+.isVisivel{
+    display: none;
+}
+/*
+.group #visivel{
+    display: none;
+}*/
+
+.ver .bi{
+    font-size: 1.6rem;
+    color: rgb(0, 0, 0);
+}
+
+
+/* ---------- div checkbox ---------- */
+.checkbox {
+    width: 100%;
+    margin: 15px 0;
+    border: 2px solid red;
+}
+.checkbox label{
+    margin: 0 8px;
+    font-size: 1.2rem;
+    color: var(--base);
+    /*border: 1px solid #fff;*/
 }
 
 form .btn {

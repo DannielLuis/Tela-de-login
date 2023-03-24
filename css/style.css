@@ -66,12 +66,21 @@ form h2 {
     align-items: flex-start;
     justify-content: center;
     margin: 15px 0;
+    border: 2px solid #fff;
 }
 
 .usuario label, .senha label{
     font-size: 1.5rem;
     color: var(--text-color);
     margin-bottom: 8px;
+}
+
+.group{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    /*justify-content: center;*/
 }
 
 .usuario #usuario, .senha #senha{

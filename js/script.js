@@ -1,6 +1,6 @@
 //
 const usuario = 'daniel';
-const acesso = 1234
+const acesso = 159
 
 const btn = document.querySelector(".btn");
 
@@ -19,11 +19,12 @@ function logar(){
 
     if(login == usuario && senha == acesso){
         alert('Login realizado com sucesso');
-        limparCampos();
+        //limparCampos();
     }else{
         alert('Usuario ou senha incorreto');
-        limparCampos();
+        //limparCampos();
     }
+    limparCampos();
 }
 /*
 btn.addEventListener("click", () => {

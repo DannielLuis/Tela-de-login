@@ -103,6 +103,14 @@ form h2 {
     border: 2px solid red;
 }
 
+.isVisivel{
+    display: none;
+}
+/*
+.group #visivel{
+    display: none;
+}*/
+
 .ver .bi{
     font-size: 1.6rem;
     color: rgb(0, 0, 0);

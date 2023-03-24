@@ -88,6 +88,19 @@ form h2 {
     outline: 2px solid #017cff83;
 }
 
+/* ---------- div checkbox ---------- */
+.checkbox {
+    width: 100%;
+    margin: 15px 0;
+    border: 2px solid red;
+}
+.checkbox label{
+    margin: 0 8px;
+    font-size: 1.2rem;
+    color: var(--base);
+    /*border: 1px solid #fff;*/
+}
+
 form .btn {
     cursor: pointer;
     width: 100%;

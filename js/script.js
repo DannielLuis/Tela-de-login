@@ -9,6 +9,15 @@ const ver = document.querySelector(".btn_ver");
     console.log(btn);
 }*/
 
+function mostrarSenha(){
+    var senha = document.getElementById("senha");
+    if(senha.type == "password"){
+        senha.type = "text";
+    }else{
+        senha.type = "password";
+    }
+}
+
 function limparCampos(){
     document.getElementById('usuario').value=''
     document.getElementById('senha').value=''
@@ -29,7 +38,8 @@ function logar(){
 }
 
 ver.addEventListener("click", () => {
-    alert("Testando o botão")
+    //alert("Testando o botão")
+    mostrarSenha();
 });
 
 btn.addEventListener("click", (e) => {

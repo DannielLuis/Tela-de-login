@@ -97,7 +97,7 @@ form h2 {
     outline: 2px solid #017cff83;
 }
 
-.group .ver{
+.group .btn_ver{
     position: absolute;
     right: 10px;
     padding: 2px;
@@ -113,7 +113,7 @@ form h2 {
     display: none;
 }*/
 
-.ver .bi{
+.btn_ver .bi{
     font-size: 1.8rem;
     color: #000;
 }

@@ -3,6 +3,7 @@ const usuario = 'daniel';
 const acesso = 159
 
 const btn = document.querySelector(".btn");
+const ver = document.querySelector(".btn_ver");
 
 /*window.onload = function(){
     console.log(btn);
@@ -26,10 +27,10 @@ function logar(){
     }
     limparCampos();
 }
-/*
-btn.addEventListener("click", () => {
-    logar();
-});*/
+
+ver.addEventListener("click", () => {
+    alert("Testando o botão")
+});
 
 btn.addEventListener("click", (e) => {
     e.preventDefault()

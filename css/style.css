@@ -66,7 +66,6 @@ form h2 {
     align-items: flex-start;
     justify-content: center;
     margin: 15px 0;
-    /*border: 2px solid #fff;*/
 }
 
 .usuario label, .senha label{
@@ -102,20 +101,15 @@ form h2 {
     right: 10px;
     padding: 2px;
     cursor: pointer;
-    /*border: 2px solid red;*/
 }
 
 .isVisivel{
     display: none;
 }
-/*
-.group #visivel{
-    display: none;
-}*/
 
 .btn_ver .bi{
     font-size: 1.8rem;
-    color: #000;
+    color: #2f2841;
 }
 
 
@@ -123,7 +117,6 @@ form h2 {
 .forn_group {
     width: 100%;
     margin: 15px 0;
-    /*border: 2px solid red;*/
     position: relative;
 }
 
@@ -131,7 +124,6 @@ form h2 {
     margin: 0 6px;
     font-size: 1.2rem;
     color: var(--base);
-    /*border: 1px solid #fff;*/
 }
 
 .forn_group #esq{
@@ -140,7 +132,6 @@ form h2 {
     font-size: 1.2rem;
     text-decoration: none;
     color: var(--base);
-    /*border: 1px solid #fff;*/
 }
 
 form .btn {
@@ -149,7 +140,7 @@ form .btn {
     font-size: 1.2rem;
     font-weight: 900;
     padding: 10px 0;
-    margin: 25px 0;
+    margin: 25px 0 0 0;
     letter-spacing: 2px;
     border: none;
     border-radius: 5px;

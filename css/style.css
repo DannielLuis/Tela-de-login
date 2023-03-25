@@ -120,15 +120,25 @@ form h2 {
 
 
 /* ---------- div checkbox ---------- */
-.checkbox {
+.forn_group {
     width: 100%;
     margin: 15px 0;
     /*border: 2px solid red;*/
+    position: relative;
 }
 
-.checkbox label{
-    margin: 0 8px;
+.forn_group label{
+    margin: 0 6px;
     font-size: 1.2rem;
+    color: var(--base);
+    /*border: 1px solid #fff;*/
+}
+
+.forn_group #esq{
+    position: absolute;
+    right: 0;
+    font-size: 1.2rem;
+    text-decoration: none;
     color: var(--base);
     /*border: 1px solid #fff;*/
 }

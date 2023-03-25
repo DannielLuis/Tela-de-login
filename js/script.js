@@ -10,6 +10,12 @@ const visivel = document.getElementById("visivel");
 /*window.onload = function(){
     console.log(btn);
 }*/
+function desabilitar(){
+    alert("Função desabilitada.")
+    return false
+}
+
+document.oncontextmenu=desabilitar
 
 function mostrarSenha(){
     var senha = document.getElementById("senha");

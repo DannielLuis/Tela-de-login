@@ -4,6 +4,8 @@ const acesso = 159
 
 const btn = document.querySelector(".btn");
 const ver = document.querySelector(".btn_ver");
+const oculta = document.getElementById("oculta");
+const visivel = document.getElementById("visivel");
 
 /*window.onload = function(){
     console.log(btn);
@@ -13,8 +15,12 @@ function mostrarSenha(){
     var senha = document.getElementById("senha");
     if(senha.type == "password"){
         senha.type = "text";
+        oculta.classList.add("isVisivel");
+        visivel.classList.remove("isVisivel");
     }else{
         senha.type = "password";
+        visivel.classList.add("isVisivel");
+        oculta.classList.remove("isVisivel");
     }
 }
 

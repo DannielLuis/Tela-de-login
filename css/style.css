@@ -66,7 +66,7 @@ form h2 {
     align-items: flex-start;
     justify-content: center;
     margin: 15px 0;
-    border: 2px solid #fff;
+    /*border: 2px solid #fff;*/
 }
 
 .usuario label, .senha label{
@@ -100,7 +100,9 @@ form h2 {
 .group .ver{
     position: absolute;
     right: 10px;
-    border: 2px solid red;
+    padding: 2px;
+    cursor: pointer;
+    /*border: 2px solid red;*/
 }
 
 .isVisivel{
@@ -112,8 +114,8 @@ form h2 {
 }*/
 
 .ver .bi{
-    font-size: 1.6rem;
-    color: rgb(0, 0, 0);
+    font-size: 1.8rem;
+    color: #000;
 }
 
 
@@ -121,8 +123,9 @@ form h2 {
 .checkbox {
     width: 100%;
     margin: 15px 0;
-    border: 2px solid red;
+    /*border: 2px solid red;*/
 }
+
 .checkbox label{
     margin: 0 8px;
     font-size: 1.2rem;
@@ -145,7 +148,6 @@ form .btn {
     background-color: var(--bg4);
     box-shadow: 0px 0px 15px var(--bg5);
 }
-
 
 @media screen and (max-width: 450px){
     form{

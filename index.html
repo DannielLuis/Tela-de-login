@@ -7,8 +7,6 @@
     <title>Tela de Login</title>
     <link href="css/style.css" rel="stylesheet"/>
     <!--<script src="js/script.js?ver=2" defer></script>-->
-
-    <link rel="stylesheet" href="./bootstrap-icons-1-10-3/bootstrap-icons.css">
 </head>
 <body>
     <header>
@@ -27,19 +25,22 @@
                         <input type="password" id="senha" name="senha" placeholder="Senha">
 
                         <div class="btn_ver">
-                            <i id="oculta" class="bi bi-eye-slash-fill"></i>
-                            
-                            <i id="visivel" class="bi isVisivel bi-eye-fill"></i>
+                            <div id="oculta" class="oculta">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="olho" viewBox="0 0 16 16">
+                                    <path class="oculta" d="m10.79 12.912-1.614-1.615a3.5 3.5 0 0 1-4.474-4.474l-2.06-2.06C.938 6.278 0 8 0 8s3 5.5 8 5.5a7.029 7.029 0 0 0 2.79-.588zM5.21 3.088A7.028 7.028 0 0 1 8 2.5c5 0 8 5.5 8 5.5s-.939 1.721-2.641 3.238l-2.062-2.062a3.5 3.5 0 0 0-4.474-4.474L5.21 3.089z"/>
+                                    <path d="M5.525 7.646a2.5 2.5 0 0 0 2.829 2.829l-2.83-2.829zm4.95.708-2.829-2.83a2.5 2.5 0 0 1 2.829 2.829zm3.171 6-12-12 .708-.708 12 12-.708.708z"/>
+                                  </svg>
+                            </div><!--oculta-->
+
+                            <div id="visivel" class="visivel noVisivel">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="olho" viewBox="0 0 16 16">
+                                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                    <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                                  </svg>
+                            </div><!--visivel-->
                         </div>
                     </div>
                 </div>
-
-                <!--
-                <i class="bi bi-eye"></i>
-                <i class="bi bi-eye-fill"></i>
-                <i class="bi bi-eye-slash"></i>
-                <i class="bi bi-eye-slash-fill"></i>
-                -->
 
                 <div class="forn_group">
                     <input type="checkbox" id="check">

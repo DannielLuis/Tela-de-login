@@ -98,18 +98,22 @@ form h2 {
 
 .group .btn_ver{
     position: absolute;
-    right: 10px;
-    padding: 2px;
+    right: 6px;
     cursor: pointer;
 }
 
-.isVisivel{
-    display: none;
+#oculta, #visivel{
+    padding: 0 .4rem;
 }
 
-.btn_ver .bi{
-    font-size: 1.8rem;
-    color: #2f2841;
+.icon{
+    width: 2rem;
+    height: 2rem;
+    fill: #2f2841;
+}
+
+.noVisivel{
+    display: none;
 }
 
 

@@ -15,18 +15,18 @@ function desabilitar(){
     return false
 }
 
-document.oncontextmenu=desabilitar
+//document.oncontextmenu=desabilitar
 
 function mostrarSenha(){
     var senha = document.getElementById("senha");
     if(senha.type == "password"){
         senha.type = "text";
-        oculta.classList.add("isVisivel");
-        visivel.classList.remove("isVisivel");
+        oculta.classList.add("noVisivel");
+        visivel.classList.remove("noVisivel");
     }else{
         senha.type = "password";
-        visivel.classList.add("isVisivel");
-        oculta.classList.remove("isVisivel");
+        visivel.classList.add("noVisivel");
+        oculta.classList.remove("noVisivel");
     }
 }
 

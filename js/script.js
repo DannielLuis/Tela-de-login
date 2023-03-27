@@ -5,6 +5,7 @@ const acesso = 159
 const conteiner_alert = document.querySelector(".conteiner_alert");
 const alert_1 = document.querySelector(".alert_1");
 const alert_2 = document.querySelector(".alert_2");
+const btn_ok = document.querySelector(".alert_1 button");
 
 const btn = document.querySelector(".btn");
 const ver = document.querySelector(".btn_ver");
@@ -22,11 +23,11 @@ function desabilitar(){
 //document.oncontextmenu=desabilitar
 
 function myAlert(qual){
-    conteiner_alert.classList.toggle("isVisivel")
+    conteiner_alert.classList.add("isVisivel");
     if(qual == "alert1"){
-        alert_1.classList.toggle("isVisivel")
+        alert_1.classList.add("isVisivel");
     }else if(qual == "alert2"){
-        alert_2.classList.toggle("isVisivel")
+        alert_2.classList.add("isVisivel");
     }
 };
 
@@ -62,6 +63,12 @@ function logar(){
     }
     limparCampos();
 };
+
+btn_ok.addEventListener("click", () => {
+    conteiner_alert.classList.remove("isVisivel");
+    alert_1.classList.remove("isVisivel");
+    alert_2.classList.remove("isVisivel");
+})
 
 ver.addEventListener("click", () => {
     //alert("Testando o botão")

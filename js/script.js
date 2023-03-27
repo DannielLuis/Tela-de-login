@@ -3,6 +3,8 @@ const usuario = 'daniel';
 const acesso = 159
 
 const conteiner_alert = document.querySelector(".conteiner_alert");
+const alert_1 = document.querySelector(".alert_1");
+const alert_2 = document.querySelector(".alert_2");
 
 const btn = document.querySelector(".btn");
 const ver = document.querySelector(".btn_ver");
@@ -19,8 +21,13 @@ function desabilitar(){
 
 //document.oncontextmenu=desabilitar
 
-function myAlert(){
+function myAlert(qual){
     conteiner_alert.classList.toggle("isVisivel")
+    if(qual == "alert1"){
+        alert_1.classList.toggle("isVisivel")
+    }else if(qual == "alert2"){
+        alert_2.classList.toggle("isVisivel")
+    }
 };
 
 function mostrarSenha(){
@@ -51,7 +58,7 @@ function logar(){
     }else{
         //alert('Usuario ou senha incorreto');
         //limparCampos();
-        myAlert();
+        myAlert("alert1");
     }
     limparCampos();
 };

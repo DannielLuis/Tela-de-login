@@ -2,6 +2,8 @@
 const usuario = 'daniel';
 const acesso = 159
 
+const conteiner_alert = document.querySelector(".conteiner_alert");
+
 const btn = document.querySelector(".btn");
 const ver = document.querySelector(".btn_ver");
 const oculta = document.getElementById("oculta");
@@ -17,6 +19,10 @@ function desabilitar(){
 
 //document.oncontextmenu=desabilitar
 
+function myAlert(){
+    conteiner_alert.classList.toggle("isVisivel")
+};
+
 function mostrarSenha(){
     var senha = document.getElementById("senha");
     if(senha.type == "password"){
@@ -27,13 +33,13 @@ function mostrarSenha(){
         senha.type = "password";
         visivel.classList.add("noVisivel");
         oculta.classList.remove("noVisivel");
-    }
-}
+    };
+};
 
 function limparCampos(){
     document.getElementById('usuario').value=''
     document.getElementById('senha').value=''
-}
+};
 
 function logar(){
     var login = document.getElementById('usuario').value;
@@ -43,11 +49,12 @@ function logar(){
         alert('Login realizado com sucesso');
         //limparCampos();
     }else{
-        alert('Usuario ou senha incorreto');
+        //alert('Usuario ou senha incorreto');
         //limparCampos();
+        myAlert();
     }
     limparCampos();
-}
+};
 
 ver.addEventListener("click", () => {
     //alert("Testando o botão")

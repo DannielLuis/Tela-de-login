@@ -28,6 +28,10 @@ function myAlert(qual){
         alert_1.classList.add("isVisivel");
     }else if(qual == "alert2"){
         alert_2.classList.add("isVisivel");
+
+        setTimeout(() => {
+            window.location.replace("./");
+        }, 3000);
     }
 };
 
@@ -54,8 +58,9 @@ function logar(){
     var senha = document.getElementById('senha').value;
 
     if(login == usuario && senha == acesso){
-        alert('Login realizado com sucesso');
+        //alert('Login realizado com sucesso');
         //limparCampos();
+        myAlert("alert2");
     }else{
         //alert('Usuario ou senha incorreto');
         //limparCampos();

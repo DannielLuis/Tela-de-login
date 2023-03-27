@@ -33,7 +33,7 @@ html, body, .tamanho{
     top: 0;
     left: 0;
     display: none;
-    background-color: rgba(128, 128, 128, 0.637);
+    background-color: rgba(128, 128, 128, 0.295);
     z-index: 10;
 }
 .alert_1, .alert_2{

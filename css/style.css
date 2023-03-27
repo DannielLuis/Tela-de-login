@@ -17,20 +17,22 @@
     box-sizing: border-box;
 }
 
-html, body{
+html, body, .tamanho{
     width: 100%;
     height: 100%;
 }
 
+.flex_center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .conteiner_alert{
-    width: 100%;
-    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
     display: none;
-    align-items: center;
-    justify-content: center;
     background-color: rgba(128, 128, 128, 0.637);
     z-index: 10;
 }
@@ -38,8 +40,6 @@ html, body{
     position: relative;
     z-index: 20;
     display: none;
-    align-items: center;
-    justify-content: center;
     width: 450px;
     height: 200px;
     background-color: var(--base);
@@ -61,21 +61,12 @@ html, body{
 }
 
 header{
-    width: 100%;
-    height: 100%;
-    /*background-image: url(../imagens/programming.jpg);*/
     background-image: url(../imagens/fundo_preto.webp);
     background-position: center center;
     background-size: cover;
 }
 
 .main{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /*background-color: var(--bg);*/
     background-color: rgba(1, 1, 75, 0.24);
 }
 
@@ -199,5 +190,4 @@ form .btn {
     }
 }
 
-
-
+/* 204 linhas */
